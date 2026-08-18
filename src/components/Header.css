@@ -1,0 +1,86 @@
+.header {
+  background: #fff;
+  padding: 2rem 1rem 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.header__container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header__main {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.header__name {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+  margin: 0;
+}
+
+.header__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #707070;
+  margin: 0;
+}
+
+.header__contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.header__contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.9rem;
+  background: rgba(161, 61, 255, 0.08);
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #3a3f47;
+}
+
+.header__icon {
+  color: #A13DFF;
+  flex-shrink: 0;
+}
+
+.header__contact a {
+  color: #3a3f47;
+  text-decoration: none;
+}
+
+.header__contact a:hover {
+  color: #A13DFF;
+}
+
+@media (max-width: 600px) {
+  .header__main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header__contacts {
+    justify-content: center;
+  }
+}
